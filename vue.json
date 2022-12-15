@@ -37,7 +37,7 @@
 
 
 		],
-		"description": "vue2-单文件模板"
+		"description": "Log output to console"
 	},
 	"ionic_vue_template": {
 		"prefix": "ionic_vue_template",
@@ -102,5 +102,28 @@
 
 		],
 		"description": "vue3-单文件模板"
+	},
+
+	"my_vue3.2_template": {
+		"prefix": "vue3.2_template",
+		"body": [
+			"<template>",
+			"  <div class=\"$1\"></div>",
+			"</template>",
+			"",
+			"<script lang=\"ts\" setup>",
+			"import { defineComponent, reactive, toRefs } from \"vue\";",
+			"import { useRouter, useRoute } from \"vue-router\";",
+			"",
+			"import { ref, watchEffect, computed } from \"vue\";",
+			"const props = defineProps({",
+			"  foo: String,",
+			"});",
+			"</script>",
+			"",
+			"<style lang=\"scss\" scoped></style>",
+
+		],
+		"description": "vue3.2-单文件模板"
 	}
 }

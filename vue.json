@@ -125,5 +125,27 @@
 
 		],
 		"description": "vue3.2-单文件模板"
-	}
+	},
+	"my_base_echart_init": {
+		"prefix": "base_echart_init",
+		"body": [
+		"    initMapHandler() {",
+		"      if (!this.mapInstance) {",
+		"        this.mapInstance = echarts.init(document.querySelector(`#map-container`));",
+		"      }",
+		"      this.mapInstance.showLoading(`default`, {",
+		"        text: `加载中，请稍候...`,",
+		"        maskColor: `rgba(0,0,0,0.5)`,",
+		"        textColor: `#fff`,",
+		"      });",
+		"      this.mapInstance.clear();",
+		"      const options = {};",
+		"      this.mapInstance.hideLoading();",
+		"      this.mapInstance.setOption(options);",
+		"    },",
+		"  },",
+
+		],
+		"description": "ehcart通用初始化方法"
+	},
 }

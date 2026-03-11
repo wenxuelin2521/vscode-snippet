@@ -1,0 +1,57 @@
+{
+	// Place your snippets for javascriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"my_log": {
+		"prefix": "my_log",
+		"body": [
+			"console.log($1);"
+		],
+		"description": "快速创建log"
+	},
+	"my_react_class":{
+		"prefix": "my_react_class",
+		"body": [
+			"import React , {Component} from 'react'",
+			"",
+			"class ${1:className} extends Component {",
+				"    constructor(props){",
+					"        super(props)",
+					"        this.state = {}",
+				"    }",
+				"   render(){",
+					"        return ${2:<div></div>}",
+				"   }",
+			"}",
+			"export default ${1:className}"
+		],
+		"description": "react类组件模板"
+	},
+	"my_react_function":{
+		"prefix": "my_react_function",
+		"body": [
+			"import React , {useState , useEffect} from 'react'",
+			"",
+			"function ${1:className}(){",
+				"    const [data , putData] = useState(0)",
+				"    useEffect(()=>{",
+				"        ${2}",
+				"    },[])",
+				"    return <div></div>",
+			"}",
+			"",
+			"export default ${1:className}",
+		],
+		"description": "react函数组件模板"
+	}
+}
